@@ -1,11 +1,11 @@
+Summary:	Battleship game with built-in game server
 Name:		knavalbattle
 Version:	4.12.1
 Release:	1
 Epoch:		1
-Summary:	Battleship game with built-in game server
-Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/navalbattle/
+Group:		Graphical desktop/KDE
+Url:		http://www.kde.org/applications/games/navalbattle/
 Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 Obsoletes:	kbattleship < 1:4.9.80
@@ -19,12 +19,13 @@ others ships in turns without knowing where they are placed. The first player
 to destroy all ships wins the game.
 
 %files
-%{_kde_bindir}/kbattleship
-%{_kde_applicationsdir}/kbattleship.desktop
-%{_kde_docdir}/*/*/kbattleship
-%{_kde_iconsdir}/hicolor/*/apps/kbattleship.png
-%{_kde_appsdir}/kbattleship
-%{_kde_services}/kbattleship.protocol
+%{_kde_bindir}/knavalbattle
+%{_kde_applicationsdir}/knavalbattle.desktop
+%{_kde_appsdir}/knavalbattle/
+%{_kde_appsdir}/kconf_update/knavalbattle.upd
+%{_kde_docdir}/*/*/knavalbattle
+%{_kde_iconsdir}/hicolor/*/apps/knavalbattle.*
+%{_kde_services}/knavalbattle.protocol
 
 #------------------------------------------------------------------------------
 
@@ -41,6 +42,7 @@ to destroy all ships wins the game.
 %changelog
 * Tue Jan 14 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.1-1
 - New version 4.12.1
+- Update files
 
 * Wed Dec 04 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.4-1
 - New version 4.11.4
