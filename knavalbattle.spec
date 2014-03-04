@@ -1,6 +1,6 @@
 Summary:	Battleship game with built-in game server
 Name:		knavalbattle
-Version:	4.12.2
+Version:	4.12.3
 Release:	1
 Epoch:		1
 License:	GPLv2 and LGPLv2 and GFDL
@@ -40,6 +40,9 @@ to destroy all ships wins the game.
 %makeinstall_std -C build
 
 %changelog
+* Tue Mar 04 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.3-1
+- New version 4.12.3
+
 * Tue Feb 04 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.2-1
 - New version 4.12.2
 
