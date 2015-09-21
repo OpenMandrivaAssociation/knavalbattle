@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   knavalbattle-15.08.0.tar.xz: bcbd0e4d925e3fa8c66a1f936f5170260723bb14
+sources:
+  knavalbattle-15.08.1.tar.xz: 9cb9620b2fb6aa62f002f9defa199c292523a07a
