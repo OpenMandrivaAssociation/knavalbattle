@@ -9,6 +9,7 @@ Url:		http://www.kde.org/applications/games/navalbattle/
 Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 BuildRequires:	kdelibs4-devel
+BuildRequires:  cmake(KDEGames)
 Obsoletes:	kbattleship < 1:4.9.80
 Provides:	kbattleship = %{EVRD}
 
