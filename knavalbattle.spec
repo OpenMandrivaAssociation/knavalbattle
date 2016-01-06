@@ -35,14 +35,11 @@ to destroy all ships wins the game.
 
 %prep
 %setup -q
+%cmake_kde5
 
-%build
-%cmake_kde5 \
-	-DCMAKE_MINIMUM_REQUIRED_VERSION=3.1
-    
+%build 
 %ninja -C build
 
-%install
 %install
 
 %files
