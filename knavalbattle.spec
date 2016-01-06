@@ -37,12 +37,13 @@ to destroy all ships wins the game.
 %setup -q
 
 %build
-%cmake_kde4 \
+%cmake_kde5 \
 	-DCMAKE_MINIMUM_REQUIRED_VERSION=3.1
-%make
+    
+%ninja -C build
 
 %install
-%makeinstall_std -C build
+%install
 
 %files
 %_kde5_datadir/applications/org.kde.knavalbattle.desktop
