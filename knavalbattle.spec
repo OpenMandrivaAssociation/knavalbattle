@@ -44,6 +44,18 @@ to destroy all ships wins the game.
 %install
 %makeinstall_std -C build
 
+%files
+%_kde5_datadir/applications/org.kde.knavalbattle.desktop
+%_kde5_datadir/kconf_update/knavalbattle.upd
+%_kde5_datadir/knavalbattle/pictures/default.desktop
+%_kde5_datadir/knavalbattle/pictures/default_theme.svgz
+%_kde5_datadir/knavalbattle/sounds/ship-player-shoot-water.ogg
+%_kde5_datadir/knavalbattle/sounds/ship-player1-shoot.ogg
+%_kde5_datadir/knavalbattle/sounds/ship-player2-shoot.ogg
+%_kde5_datadir/knavalbattle/sounds/ship-sink.ogg
+%_kde5_services/knavalbattle.protocol
+%_kde5_xmlguidir/knavalbattle/knavalbattleui.rc
+
 %changelog
 * Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.3-1
 - New version 4.14.3
