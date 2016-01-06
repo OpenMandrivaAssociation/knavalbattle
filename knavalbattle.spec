@@ -10,6 +10,8 @@ Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.
 BuildRequires:	libkdegames-devel
 BuildRequires:	kdelibs4-devel
 BuildRequires:  cmake(KDEGames)
+BuildRequires:	cmake(KF5Notifications)
+BuildRequires:	cmake(KF5DocTools)
 Obsoletes:	kbattleship < 1:4.9.80
 Provides:	kbattleship = %{EVRD}
 
