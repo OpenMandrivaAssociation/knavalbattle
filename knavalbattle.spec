@@ -22,14 +22,8 @@ Ships are placed on a board which represents the sea. Players try to hit each
 others ships in turns without knowing where they are placed. The first player
 to destroy all ships wins the game.
 
-%files
-%{_kde_bindir}/knavalbattle
-%{_kde_applicationsdir}/knavalbattle.desktop
-%{_kde_appsdir}/knavalbattle/
-%{_kde_appsdir}/kconf_update/knavalbattle.upd
-%{_kde_docdir}/*/*/knavalbattle
-%{_kde_iconsdir}/hicolor/*/apps/knavalbattle.*
-%{_kde_services}/knavalbattle.protocol
+
+
 
 #------------------------------------------------------------------------------
 
@@ -41,18 +35,23 @@ to destroy all ships wins the game.
 %ninja -C build
 
 %install
+%ninja_install -C build
 
 %files
-%_kde5_datadir/applications/org.kde.knavalbattle.desktop
-%_kde5_datadir/kconf_update/knavalbattle.upd
-%_kde5_datadir/knavalbattle/pictures/default.desktop
-%_kde5_datadir/knavalbattle/pictures/default_theme.svgz
-%_kde5_datadir/knavalbattle/sounds/ship-player-shoot-water.ogg
-%_kde5_datadir/knavalbattle/sounds/ship-player1-shoot.ogg
-%_kde5_datadir/knavalbattle/sounds/ship-player2-shoot.ogg
-%_kde5_datadir/knavalbattle/sounds/ship-sink.ogg
-%_kde5_services/knavalbattle.protocol
-%_kde5_xmlguidir/knavalbattle/knavalbattleui.rc
+%{_kde5_bindir}/knavalbattle
+%{_kde5_datadir}/kconf_update/knavalbattle.upd
+%{_kde5_docdir}/*/*/knavalbattle
+%{_kde5_iconsdir}/hicolor/*/apps/knavalbattle.*
+%{_kde5_services}/knavalbattle.protocol
+%{_kde5_datadir}/applications/org.kde.knavalbattle.desktop
+%{_kde5_datadir}/knavalbattle/pictures/default.desktop
+%{_kde5_datadir}/knavalbattle/pictures/default_theme.svgz
+%{_kde5_datadir}/knavalbattle/sounds/ship-player-shoot-water.ogg
+%{_kde5_datadir}/knavalbattle/sounds/ship-player1-shoot.ogg
+%{_kde5_datadir}/knavalbattle/sounds/ship-player2-shoot.ogg
+%{_kde5_datadir}/knavalbattle/sounds/ship-sink.ogg
+%{_kde5_xmlguidir}/knavalbattle/knavalbattleui.rc
+
 
 %changelog
 * Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.3-1
