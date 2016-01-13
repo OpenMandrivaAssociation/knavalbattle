@@ -1,7 +1,7 @@
 Summary:	Battleship game with built-in game server
 Name:		knavalbattle
-Version:	15.12.0
-Release:	2
+Version:	15.12.1
+Release:	1
 Epoch:		1
 License:	GPLv2 and LGPLv2 and GFDL
 Group:		Graphical desktop/KDE
