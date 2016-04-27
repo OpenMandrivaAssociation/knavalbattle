@@ -1,12 +1,12 @@
 Summary:	Battleship game with built-in game server
 Name:		knavalbattle
-Version:	15.12.3
+Version:	16.04.0
 Release:	1
 Epoch:		1
 License:	GPLv2 and LGPLv2 and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/games/navalbattle/
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 BuildRequires:	kdelibs4-devel
 BuildRequires:  cmake(KDEGames)
