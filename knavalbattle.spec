@@ -12,6 +12,7 @@ BuildRequires:	kdelibs4-devel
 BuildRequires:  cmake(KDEGames)
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5Crash)
 Obsoletes:	kbattleship < 1:4.9.80
 Provides:	kbattleship = %{EVRD}
 
