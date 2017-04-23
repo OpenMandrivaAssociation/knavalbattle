@@ -1,12 +1,12 @@
 Summary:	Battleship game with built-in game server
 Name:		knavalbattle
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 License:	GPLv2 and LGPLv2 and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/games/navalbattle/
-Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 BuildRequires:	kdelibs4-devel
 BuildRequires:  cmake(KDEGames)
@@ -37,11 +37,11 @@ to destroy all ships wins the game.
 
 %install
 %ninja_install -C build
+%find_lang %{name} --with-html
 
-%files
+%files -f %{name}.lang
 %{_kde5_bindir}/knavalbattle
 %{_kde5_datadir}/kconf_update/knavalbattle.upd
-%{_kde5_docdir}/*/*/knavalbattle
 %{_kde5_iconsdir}/hicolor/*/apps/knavalbattle.*
 %{_kde5_services}/knavalbattle.protocol
 %{_kde5_datadir}/applications/org.kde.knavalbattle.desktop
@@ -52,67 +52,3 @@ to destroy all ships wins the game.
 %{_kde5_datadir}/knavalbattle/sounds/ship-player2-shoot.ogg
 %{_kde5_datadir}/knavalbattle/sounds/ship-sink.ogg
 %{_kde5_xmlguidir}/knavalbattle/knavalbattleui.rc
-
-
-%changelog
-* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.3-1
-- New version 4.14.3
-
-* Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.2-1
-- New version 4.14.2
-
-* Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.1-1
-- New version 4.14.1
-
-* Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.13.3-1
-- New version 4.13.3
-
-* Wed Jun 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.13.2-1
-- New version 4.13.2
-
-* Wed Apr 02 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.4-1
-- New version 4.12.4
-
-* Tue Mar 04 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.3-1
-- New version 4.12.3
-
-* Tue Feb 04 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.2-1
-- New version 4.12.2
-
-* Tue Jan 14 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.1-1
-- New version 4.12.1
-- Update files
-
-* Wed Dec 04 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.4-1
-- New version 4.11.4
-
-* Wed Nov 06 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.3-1
-- New version 4.11.3
-
-* Wed Oct 02 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.2-1
-- New version 4.11.2
-
-* Tue Sep 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.1-1
-- New version 4.11.1
-
-* Wed Aug 14 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.0-1
-- New version 4.11.0
-
-* Wed Jul 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.5-1
-- New version 4.10.5
-
-* Wed Jun 05 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.4-1
-- New version 4.10.4
-
-* Tue May 07 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.3-1
-- New version 4.10.3
-
-* Wed Apr 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.2-1
-- New version 4.10.2
-
-* Sat Mar 09 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.1-1
-- New version 4.10.1
-
-* Wed Feb 13 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.0-1
-- Split from kdegames4 package
-
