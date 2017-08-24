@@ -1,19 +1,18 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Battleship game with built-in game server
 Name:		knavalbattle
-Version:	17.04.2
+Version:	17.08.0
 Release:	1
 Epoch:		1
 License:	GPLv2 and LGPLv2 and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/games/navalbattle/
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	libkdegames-devel
-BuildRequires:	kdelibs4-devel
-BuildRequires:  cmake(KDEGames)
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5Crash)
+BuildRequires:	cmake
+BuildRequires:	cmake(ECM)
 Obsoletes:	kbattleship < 1:4.9.80
 Provides:	kbattleship = %{EVRD}
 
@@ -53,3 +52,4 @@ to destroy all ships wins the game.
 %{_kde5_datadir}/knavalbattle/sounds/ship-player2-shoot.ogg
 %{_kde5_datadir}/knavalbattle/sounds/ship-sink.ogg
 %{_kde5_xmlguidir}/knavalbattle/knavalbattleui.rc
+%{_datadir}/metainfo/org.kde.knavalbattle.appdata.xml
