@@ -10,7 +10,8 @@ Url:		http://www.kde.org/applications/games/navalbattle/
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5DocTools)
-BuildRequires:	cmake(KF5Crash)
+BuildRequires:	cmake(KF5Crash) cmake(KF5KDEGames)
+BuildRequires:	cmake(KF5DBusAddons) cmake(KF5DNSSD) cmake(KF5I18n) cmake(KF5TextWidgets) cmake(KF5XmlGui)
 BuildRequires:	cmake
 BuildRequires:	cmake(ECM)
 Obsoletes:	kbattleship < 1:4.9.80
