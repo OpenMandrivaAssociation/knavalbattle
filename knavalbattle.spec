@@ -1,13 +1,13 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Battleship game with built-in game server
 Name:		knavalbattle
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Epoch:		1
 License:	GPLv2 and LGPLv2 and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/games/navalbattle/
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5Crash) cmake(KF5KDEGames)
@@ -39,6 +39,9 @@ to destroy all ships wins the game.
 %install
 %ninja_install -C build
 %find_lang %{name} --with-html
+
+# FIXME workaround for gdb 8.3.1 hang
+strip --strip-unneeded %{buildroot}%{_bindir}/*
 
 %files -f %{name}.lang
 %{_kde5_bindir}/knavalbattle
