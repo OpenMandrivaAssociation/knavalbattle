@@ -40,9 +40,6 @@ to destroy all ships wins the game.
 %ninja_install -C build
 %find_lang %{name} --with-html
 
-# FIXME workaround for gdb 8.3.1 hang
-strip --strip-unneeded %{buildroot}%{_bindir}/*
-
 %files -f %{name}.lang
 %{_kde5_bindir}/knavalbattle
 %{_kde5_datadir}/kconf_update/knavalbattle.upd
