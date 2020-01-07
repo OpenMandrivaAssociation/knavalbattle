@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Battleship game with built-in game server
 Name:		knavalbattle
-Version:	19.12.0
+Version:	19.12.1
 Release:	1
 Epoch:		1
 License:	GPLv2 and LGPLv2 and GFDL
