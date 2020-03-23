@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Battleship game with built-in game server
 Name:		knavalbattle
-Version:	19.12.3
+Version:	20.03.80
 Release:	1
 Epoch:		1
 License:	GPLv2 and LGPLv2 and GFDL
@@ -54,3 +54,4 @@ to destroy all ships wins the game.
 %{_kde5_datadir}/knavalbattle/sounds/ship-sink.ogg
 %{_kde5_xmlguidir}/knavalbattle/knavalbattleui.rc
 %{_datadir}/metainfo/org.kde.knavalbattle.appdata.xml
+%{_datadir}/qlogging-categories5/knavalbattle.categories
