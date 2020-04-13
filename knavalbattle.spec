@@ -8,6 +8,7 @@ License:	GPLv2 and LGPLv2 and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/games/navalbattle/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		knavalbattle-qt-5.15.patch
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5Crash) cmake(KF5KDEGames)
@@ -30,7 +31,7 @@ to destroy all ships wins the game.
 #------------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build 
