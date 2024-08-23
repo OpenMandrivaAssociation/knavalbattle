@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Battleship game with built-in game server
 Name:		plasma6-knavalbattle
-Version:	24.05.2
+Version:	24.08.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2 and LGPLv2 and GFDL
 Group:		Graphical desktop/KDE
@@ -41,3 +41,4 @@ to destroy all ships wins the game.
 %{_datadir}/knavalbattle
 %{_datadir}/metainfo/org.kde.knavalbattle.appdata.xml
 %{_datadir}/qlogging-categories6/knavalbattle.categories
+%{_datadir}/qlogging-categories6/knavalbattle.renamecategories
