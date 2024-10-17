@@ -8,7 +8,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2 and LGPLv2 and GFDL
 Group:		Graphical desktop/KDE
-Url:		http://www.kde.org/applications/games/navalbattle/
+Url:		https://www.kde.org/applications/games/navalbattle/
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/games/knavalbattle/-/archive/%{gitbranch}/knavalbattle-%{gitbranchd}.tar.bz2#/knavalbattle-%{git}.tar.bz2
 %else
