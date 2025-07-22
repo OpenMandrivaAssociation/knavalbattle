@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Battleship game with built-in game server
 Name:		knavalbattle
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2 and LGPLv2 and GFDL
 Group:		Graphical desktop/KDE
@@ -23,6 +23,8 @@ BuildSystem:	cmake
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 Obsoletes:	kbattleship < 1:4.9.80
 Provides:	kbattleship = %{EVRD}
+
+%rename plasma6-knavalbattle
 
 %description
 Naval Battle (ex-KBattleship) is a Battle Ship game for KDE.
